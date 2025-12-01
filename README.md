@@ -56,7 +56,7 @@ Designed an **interactive dashboard** with 3 pages:
 
 ![Dashboard Profile](dashboard/pics/profile.png)
 
-6. Interactive Streamlit App
+### 6. Interactive Streamlit App
 
 See the live app in action with all prediction steps and interactive input:
 💻 **Open the Live App:** [Credit Card Churn Predictor](https://credit-card-churn-prediction.streamlit.app/) 🚀
