@@ -1,9 +1,10 @@
-# 📊 Credit Card Customer Attrition Prediction
+# 📊 Credit Card Customer churn Prediction
 
 This project focuses on **analyzing and predicting customer attrition (churn)** in the banking sector using **machine learning and data science techniques**.  
 The goal is to explore customer behavior, engineer meaningful features, train predictive models, and evaluate their performance to **identify factors that influence churn and assess customer risk**.
 
 ---
+[![Streamlit App](https://img.shields.io/badge/Live-Demo-blue?logo=streamlit&style=for-the-badge)](https://credit-card-churn-prediction.streamlit.app/)
 
 ## 🚀 Project Workflow
 
