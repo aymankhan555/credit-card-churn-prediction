@@ -1,3 +1,4 @@
+import os 
 from datetime import date
 import streamlit as st
 import pandas as pd
@@ -69,11 +70,18 @@ def new_features(data_df):
 
 def model_load():
     try:
-        model = joblib.load('models/best_model.pkl')
-        pipeline = joblib.load('models/preprocess_pipeline.pkl')
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        model_path = os.path.join(base_dir, 'models', 'best_model.pkl')
+        pipeline_path = os.path.join(base_dir, 'models', 'preprocess_pipeline.pkl')
+
+
+        model = joblib.load(model_path)
+        pipeline = joblib.load(pipeline_path)
+
         st.sidebar.success("Model and pipeline loaded successfully!")
         return model, pipeline
     except Exception as e:
+        print(f"Deployment Load Error: {e}") 
         st.error(f"Error loading model: {e}")
         return None, None
 
